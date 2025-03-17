@@ -1,235 +1,420 @@
+import java.util.Scanner;
+
 public class App {
+
   public static void main(String[] args) {
-    Buku teknologi1 = new Buku(
+    String kode;
+    Scanner masuk = new Scanner(System.in);
+
+    Buku tekno1 = new Buku(
       "Pemprograman Java",
       "Bayu Rahayudi",
-      "Teknologi"
+      "Teknologi",
+      "Belajar bahasa pemrograman Java untuk pengembangan aplikasi desktop, mobile, dan web yang bersifat multiplatform. Java dikenal dengan konsep OOP (Object-Oriented Programming) yang kuat dan library yang lengkap.",
+      "2003",
+      "tekno1"
     );
-    Buku teknologi2 = new Buku(
+    Buku tekno2 = new Buku(
       "Pemprograman C++",
       "Bayu Rahayudi",
-      "Teknologi"
+      "Teknologi",
+      "Menguasai bahasa C++ untuk membuat software berkinerja tinggi seperti game, sistem operasi, dan aplikasi yang membutuhkan manajemen memori efisien. C++ juga mendukung pemrograman berbasis objek dan prosedural.",
+      "2021",
+      "tekno2"
     );
-    Buku teknologi3 = new Buku(
+    Buku tekno3 = new Buku(
       "Pemprograman PHP",
-      "Bayu Rahayudi",
-      "Teknologi"
+      "Si itu itu",
+      "Teknologi",
+      "Menguasai PHP untuk membuat website dinamis dan interaktif. PHP sering digunakan bersama MySQL untuk membangun sistem seperti CMS, blog, atau aplikasi web berbasis server.",
+      "1998",
+      "tekno3"
     );
-    Buku teknologi4 = new Buku(
+    Buku tekno4 = new Buku(
       "Pemprograman SQL",
       "Bayu Rahayudi",
-      "Teknologi"
+      "Teknologi",
+      "Belajar SQL (Structured Query Language) untuk mengelola, memanipulasi, dan menganalisis data dalam database. SQL penting untuk pengembangan aplikasi berbasis data seperti sistem informasi dan e-commerce.",
+      "1997",
+      "tekno4"
     );
-    Buku teknologi5 = new Buku(
+    Buku tekno5 = new Buku(
       "Pemprograman WEB",
-      "Bayu Rahayudi",
-      "Teknologi"
+      "Mas Rusdi",
+      "Teknologi",
+      "Memahami dasar-dasar pembuatan website interaktif menggunakan HTML, CSS, dan JavaScript. Pelajari juga framework modern seperti React atau Angular untuk pengembangan web yang lebih dinamis.",
+      "2003",
+      "tekno5"
     );
 
-
-    Buku filsafat1 = new Buku(
+    Buku fil1 = new Buku(
       "Filosofi Teras",
-      "Miko HaloHalo",
-      "Filsafat"
+      "Miko Helo",
+      "Filsafat",
+      "Menjelajahi makna teras sebagai ruang transisi antara dunia luar dan dalam, simbol penyambutan dan refleksi kehidupan sehari-hari.",
+      "2018",
+      "fil1"
     );
-    Buku filsafat2 = new Buku(
+    Buku fil2 = new Buku(
       "Filosofi Tembok",
       "Miko HaloHalo",
-      "Filsafat"
+      "Filsafat",
+      "Tembok sebagai pembatas fisik dan metafora perlindungan, privasi, serta batasan dalam hubungan sosial dan personal.",
+      "2009",
+      "fil2"
     );
-    Buku filsafat3 = new Buku(
+    Buku fil3 = new Buku(
       "Filosofi Ruang Tamu",
-      "Miko HaloHalo",
-      "Filsafat"
+      "Mik*ntol",
+      "Filsafat",
+      "Ruang tamu sebagai pusat interaksi sosial, mencerminkan identitas pemilik dan tempat pertukaran ide serta cerita.",
+      "2022",
+      "fil3"
     );
-    Buku filsafat4 = new Buku(
+    Buku fil4 = new Buku(
       "Filosofi Kamar",
-      "Miko HaloHalo",
-      "Filsafat"
+      "Miko Mika",
+      "Filsafat",
+      "Kamar sebagai ruang pribadi untuk istirahat, introspeksi, dan ekspresi diri, mencerminkan kenyamanan dan kedamaian batin.",
+      "2019",
+      "fil4"
     );
-    Buku filsafat5 = new Buku(
+    Buku fil5 = new Buku(
       "Filosofi Pager",
-      "Miko HaloHalo",
-      "Filsafat"
+      "Mikodok",
+      "Filsafat",
+      "sebagai simbol batas dan keamanan, melambangkan perlindungan sekaligus keterpisahan antara dunia privat dan publik.",
+      "2010",
+      "fil5"
     );
 
-
-    Buku sejarah1 = new Buku(
+    Buku sej1 = new Buku(
       "History of Islam",
       "Hazel ty",
-      "Sejarah"
+      "Sejarah",
+      "Sejarah perkembangan Islam dari masa Nabi Muhammad hingga menjadi salah satu agama terbesar di dunia, mencakup budaya, ilmu pengetahuan, dan politik.",
+      "2004",
+      "sej1"
     );
-    Buku sejarah2 = new Buku(
-      "History of Hind",
-      "Hazel ty",
-      "Sejarah"
+    Buku sej2 = new Buku(
+      "History of Ambatron",
+      "Akhmad Oli Samping",
+      "Sejarah",
+      "Kisah peradaban atau organisasi Ambatron yang memengaruhi dunia melalui teknologi atau kekuatan misterius.",
+      "2003",
+      "sej2"
     );
-    Buku sejarah3 = new Buku(
+    Buku sej3 = new Buku(
       "History of Jews",
-      "Hazel ty",
-      "Sejarah"
+      "Hazelol",
+      "Sejarah",
+      "YAHUDI YAHUDI YAHUDI YAHUDI YAHUDI YAHUDI YAHUDI YAHUDI YAHUDI YAHUDI YAHOODIIE",
+      "2001",
+      "sej3"
     );
-    Buku sejarah4 = new Buku(
+    Buku sej4 = new Buku(
       "History of Nazi",
-      "Hazel ty",
-      "Sejarah"
+      "Hazel miring",
+      "Sejarah",
+      "Bangkit dan jatuhnya rezim Nazi Jerman pimpinan Adolf Hitler, termasuk Perang Dunia II dan Holocaust yang mengubah sejarah dunia.",
+      "1945",
+      "sej4"
     );
-    Buku sejarah5 = new Buku(
-      "History of Amabatron",
-      "Hazel ty",
-      "Sejarah"
+    Buku sej5 = new Buku(
+      "History of Ambatron",
+      "Akhmad Oli Samping",
+      "Sejarah",
+      "Kisah peradaban atau organisasi Ambatron yang memengaruhi dunia melalui teknologi atau kekuatan misterius.",
+      "2003",
+      "sej5"
     );
 
     Buku agama1 = new Buku(
       "Tata Cara Sholat Cepet",
-      "Hazel ty",
-      "Agama"
+      " Gus Hazel",
+      "Agama",
+      "Panduan praktis sholat dalam waktu singkat tanpa mengabaikan syarat dan rukun, cocok untuk situasi darurat.",
+      "2024",
+      "agama1"
     );
     Buku agama2 = new Buku(
       "Mafia  Sholawat",
-      "Hazel ty",
-      "Agama"
+      "Gus Hazel",
+      "Agama",
+      " Kelompok atau komunitas yang giat menyebarkan sholawat namun sering dianggap memiliki agenda terselubung.",
+      "2025",
+      "agama2"
     );
     Buku agama3 = new Buku(
       "Gus Akira",
-      "Hazel ty",
-      "Agama"
+      "Gilbert duri",
+      "Agama",
+      "Kisah inspiratif atau kontroversial tentang seorang tokoh bernama Gus Akira dalam konteks sosial atau keagamaan.",
+      "1567",
+      "agama3"
     );
     Buku agama4 = new Buku(
       "Wong liyo ngerti opo (Islam perspection)",
-      "Hazel ty",
-      "Agama"
+      "Ahza Melu",
+      "Agama",
+      "Perspektif Islam tentang bagaimana non-Muslim memandang ajaran dan praktik keagamaan umat Islam.",
+      "2008",
+      "agama4"
     );
     Buku agama5 = new Buku(
       "Bagaimana cara tidur ketika solat",
-      "Hazel ty",
-      "Agama"
+      "Ahza MRP",
+      "Agama",
+      "Tips menghindari kantuk saat sholat atau refleksi tentang konsentrasi dalam ibadah.",
+      "2011",
+      "agama5"
     );
 
-
-    Buku psikologi1 = new Buku(
+    Buku psiko1 = new Buku(
       "Psychology of Money",
       "Wedanta",
-      "Psikologi"
+      "Psikologi",
+      "Eksplorasi psikologi manusia dalam mengelola uang, termasuk kebiasaan, keserakahan, dan kebahagiaan finansial.",
+      "2099",
+      "psiko1"
     );
-    Buku psikologi2 = new Buku(
+    Buku psiko2 = new Buku(
       "Psychology of lowkey",
-      "Wedanta",
-      "Psikologi"
+      "Yuri",
+      "Psikologi",
+      "Studi tentang kepribadian introvert atau orang yang memilih hidup sederhana dan tidak mencolok.",
+      "2022",
+      "psiko2"
     );
-    Buku psikologi3 = new Buku(
+    Buku psiko3 = new Buku(
       "Psychology of love",
-      "Wedanta",
-      "Psikologi"
+      "Valent",
+      "Psikologi",
+      "Analisis psikologis tentang cinta, termasuk faktor biologis, emosional, dan sosial yang memengaruhi hubungan.",
+      "2003",
+      "psiko3"
     );
-    Buku psikologi4 = new Buku(
+    Buku psiko4 = new Buku(
       "Lover but not in love",
-      "Wedanta",
-      "Psikologi"
+      "Master G",
+      "Psikologi",
+      "Fenomena psikologis di mana seseorang berada dalam hubungan tetapi kehilangan perasaan cinta romantis.",
+      "2002",
+      "psiko4"
     );
-    Buku psikologi5 = new Buku(
+    Buku psiko5 = new Buku(
       "ILY3000 but my mind broke",
-      "Wedanta",
-      "Psikologi"
+      "Master G",
+      "Psikologi",
+      "Konflik batin antara perasaan cinta yang mendalam dan tekanan mental yang mengganggu stabilitas emosional.",
+      "2010",
+      "psiko5"
     );
 
-
-    Buku politik1 = new Buku(
+    Buku poli1 = new Buku(
       "Dynasti Jokowi",
       "Uun Hariyanti",
-      "Politik"
+      "Politik",
+      "Analisis tentang pengaruh dan warisan politik Jokowi serta kemungkinan terbentuknya dinasti politik dalam keluarganya.",
+      "2003",
+      "poli1"
     );
-    Buku politik2 = new Buku(
+    Buku poli2 = new Buku(
       "Dynasti Gibran",
-      "Uun Hariyanti",
-      "Politik"
+      "Hasan Kopling",
+      "Politik",
+      "Eksplorasi peran Gibran Rakabuming Raka dalam politik Indonesia dan potensi dinasti keluarga Jokowi.",
+      "2005",
+      "poli2"
     );
-    Buku politik3 = new Buku(
-      "Pegolakan NKRI",
-      "Uun Hariyanti",
-      "Politik"
+    Buku poli3 = new Buku(
+      "Pergolakan NKRI",
+      "Jamrud gg",
+      "Politik",
+      "Sejarah dan tantangan yang dihadapi Negara Kesatuan Republik Indonesia, termasuk konflik internal dan upaya mempertahankan persatuan.",
+      "2000",
+      "poli3"
     );
-    Buku politik4 = new Buku(
-      "Reformasi Klimkas",
-      "Uun Hariyanti",
-      "Politik"
+    Buku poli4 = new Buku(
+      "Reformasi emas",
+      "Intan Gaming",
+      "Politik",
+      "Refleksi tentang era Reformasi 1998 dan dampaknya terhadap demokrasi, ekonomi, dan sosial di Indonesia.",
+      "1997",
+      "poli4"
     );
-    Buku politik5 = new Buku(
+    Buku poli5 = new Buku(
       "Penghancur Negara",
       "Uun Hariyanti",
-      "Politik"
+      "Politik",
+      "Analisis faktor-faktor internal dan eksternal yang dapat mengancam keutuhan dan stabilitas suatu negara.",
+      "2025",
+      "poli5"
     );
 
     Buku fiksi1 = new Buku(
       "Aldebaran",
       "Tere Liye",
-      "Fiksi"
+      "Fiksi",
+      "menceritakan Raib dan Seli yang kembali ke Klan Bumi setelah petualangan di Klan Matahari Minor, persahabatan mereka terancam, Seli sakit dan Ali memutuskan pulang, serta perjalanan menuju Klan Aldebaran dimula",
+      "2024",
+      "fiksi1"
     );
     Buku fiksi2 = new Buku(
       "Komet Minor",
       "Tere Liye",
-      "Fiksi"
+      "Fiksi",
+      "petualangan mencari Klan Komet Minor, bagaimana persahabatan antara Ali, Seli, dan Raib melewati setiap tantangan dalam mendapatkan tombak pusaka",
+      "2022",
+      "fiksi2"
     );
 
     Buku fiksi3 = new Buku(
       "Matahari Minor",
       "Tere Liye",
-      "Fiksi"
+      "Fiksi",
+      "menceritakan kisah Seli, seorang remaja perempuan yang memiliki kekuatan istimewa untuk mengeluarkan petir",
+      "2023",
+      "fiksi3"
     );
 
     Buku fiksi4 = new Buku(
       "Bibigill",
       "Tere Liye",
-      "Fiksi"
+      "Fiksi",
+      "seorang gadis bernama Bibi Gill yang berjuang mengalahkan monster dalam hidupnya",
+      "2021",
+      "fiksi4"
     );
 
     Buku fiksi5 = new Buku(
       "Si Putih",
       "Tere Liye",
-      "Fiksi"
+      "Fiksi",
+      "Si Putih adalah seekor kucing kuno yang hidup pada ribuan tahun yang lalu di klan Polaris. Pada cerita ini penulis menggambarkan ikatan persahabatan antara manusia dengan hewan. Arti persahabatan yang sangat tulus. Manusia memiliki perasan begitu juga dengan hewan",
+      "2021",
+      "fiksi5"
     );
 
+    for (int x = 0; x < 1;) {
+      System.out.println("==================================================");
+      System.out.printf("%18s%s%10s", " ", "PERPUSTAKAAN", " ");
+      System.out.println(
+        "\n=================================================="
+      );
+      System.out.println(
+        "Selamat datang di \"PERPUSTAKAAN\", tempat untuk menemukan buku-buku yang tepat. " +
+        "\nKategori dan KODE-nya: " +
+        "\n1.Teknologi (TEKNO)" +
+        "\n2.Filsafat (FIL)" +
+        "\n3.Sejarah (SEJ)" +
+        "\n4.Agama (AGAMA)" +
+        "\n5.Psikologi (PSIKO)" +
+        "\n6.Politik (POLI)" +
+        "\n7.Fiksi (FIKSI)" +
+        "\nPerbandingan buku (BANDING)" +
+        "\nPanggil Copy (COPY)"+
+        "\nKELUAR PERSPUSTAKAAN (KELUAR)" +
+        "\nMasukan KODE : "
+      );
+      kode = masuk.nextLine();
+      switch (kode.toUpperCase()) {
+        case "TEKNO":
+          System.out.println(
+            "=================================================="
+          );
+          tekno1.displayBuku();
+          tekno2.displayBuku();
+          tekno3.displayBuku();
+          tekno4.displayBuku();
+          tekno5.displayBuku();
+          break;
+        case "FIL":
+          System.out.println(
+            "=================================================="
+          );
+          fil1.displayBuku();
+          fil2.displayBuku();
+          fil3.displayBuku();
+          fil4.displayBuku();
+          fil5.displayBuku();
+          break;
+        case "SEJ":
+          System.out.println(
+            "=================================================="
+          );
+          sej1.displayBuku();
+          sej2.displayBuku();
+          sej3.displayBuku();
+          sej4.displayBuku();
+          sej5.displayBuku();
+          break;
+        case "AGAMA":
+          System.out.println(
+            "=================================================="
+          );
+          agama1.displayBuku();
+          agama2.displayBuku();
+          agama3.displayBuku();
+          agama4.displayBuku();
+          agama5.displayBuku();
+          break;
+        case "PSIKO":
+          System.out.println(
+            "=================================================="
+          );
+          psiko1.displayBuku();
+          psiko2.displayBuku();
+          psiko3.displayBuku();
+          psiko4.displayBuku();
+          psiko5.displayBuku();
+          break;
+        case "POLI":
+          System.out.println(
+            "=================================================="
+          );
+          poli1.displayBuku();
+          poli2.displayBuku();
+          poli3.displayBuku();
+          poli4.displayBuku();
+          poli5.displayBuku();
+          break;
+        case "FIKSI":
+          System.out.println(
+            "=================================================="
+          );
+          fiksi1.displayBuku();
+          fiksi2.displayBuku();
+          fiksi3.displayBuku();
+          fiksi4.displayBuku();
+          fiksi5.displayBuku();
+          break;
+        case "COPY":
+        Buku copyan = new Buku(poli1);
+        copyan.displayBuku();
+        break;
+        case "BANDING":
+          tekno1.perbandingan(sej2, sej5);
+          break;
+        
+        case "KELUAR":
+          System.out.println(
+            "=================================================="
+          );
+          masuk.close();
+          System.exit(0);
+          break;
+        default:
+          System.out.println(
+            "=================================================="
+          );
+          System.out.println("Tolong masukan KODE yang benar");
 
-    teknologi1.displayBuku();
-    teknologi2.displayBuku();
-    teknologi3.displayBuku();
-    teknologi4.displayBuku();
-    teknologi5.displayBuku();
+          break;
+      }
+    }
 
-    filsafat1.displayBuku();
-    filsafat2.displayBuku();
-    filsafat3.displayBuku();
-    filsafat4.displayBuku();
-    filsafat5.displayBuku();
-
-    sejarah1.displayBuku();
-    sejarah2.displayBuku();
-    sejarah3.displayBuku();
-    sejarah4.displayBuku();
-    sejarah5.displayBuku();
-
-    agama1.displayBuku();
-    agama2.displayBuku();
-    agama3.displayBuku();
-    agama4.displayBuku();
-    agama5.displayBuku();
-
-    psikologi1.displayBuku();
-    psikologi2.displayBuku();
-    psikologi3.displayBuku();
-    psikologi4.displayBuku();
-    psikologi5.displayBuku();
-
-    politik1.displayBuku();
-    politik2.displayBuku();
-    politik3.displayBuku();
-    politik4.displayBuku();
-    politik5.displayBuku();
-
-    fiksi1.displayBuku();
-    fiksi2.displayBuku();
-    fiksi3.displayBuku();
-    fiksi4.displayBuku();
-    fiksi5.displayBuku();
   }
+  
+  
 }
